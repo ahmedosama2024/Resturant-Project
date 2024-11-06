@@ -1,0 +1,57 @@
+.menu{
+    background-color: rgb(100, 67,46) ;
+    height: 200vh;
+    
+}
+.mheader{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    h2{
+        font-size: 3rem;
+    }
+}
+.items{
+    z-index: 1000;
+    background-color: white;
+    margin-left: 5%;
+    width: 90%;
+    height: 150vh;
+}
+.btn{
+    width: 100%;
+    button{
+        border: none;
+        background-color: white;
+        width: 33%;
+        height: 100%;
+        font-size: 2rem;
+    }
+    @media(max-width:500px){
+        button{
+            font-size: 1rem;
+        }
+    }
+    button:hover{
+        background-color:rgb(100, 67,46);
+    }
+    .Active{
+        background-color: rgb(100, 67,46) ;
+    }
+    .Active1{
+        background-color: rgb(100, 67,46) ;
+    }
+    .Active2{
+        background-color: rgb(100, 67,46) ;
+    }
+}
+.pizza{
+    display: none;
+}
+.salad{
+    display: none;
+}
+.apptizers{
+    display: none;
+}
+

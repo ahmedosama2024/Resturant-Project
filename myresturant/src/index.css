@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(100, 67,46) !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive !important;
+  font-optical-sizing: auto !important;
+}
+.btn:hover{
+  color: rgba(218, 186, 4, 0.699) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button:hover{
+  opacity: 90% !important;
+}
+span{
+  color: red;
+}

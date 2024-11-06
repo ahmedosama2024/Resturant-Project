@@ -1,0 +1,54 @@
+.R{
+    font-size: 3.5rem;
+}
+.NavH{
+    background-color: rgb(100, 67,46) !important;
+    transition: ease;
+    position: sticky !important;
+    top: 0;
+    z-index: 1500;
+}
+.logo{
+    margin-left: 10px !important;
+    font-size: 3rem;
+    color: rgba(218, 186, 4, 0.699) !important;
+    font-weight: bold !important;
+}
+.nav{
+    font-size: 2rem !important;
+    margin-left:20% !important;
+}
+.nav-link:hover{
+    color: rgba(218, 186, 4, 0.699) !important;
+}
+.welcome-message{
+    font-size: 2rem;
+}
+@media(max-width:1100px){
+    .nav{
+        margin-left:5% !important;
+        font-size: 1.5rem !important;
+    }
+
+}
+@media(max-width:500px){
+    .welcome-message{
+        font-size: 0.5rem;
+    }
+    .nav{
+        font-size: 0.65rem !important;
+        margin-left:0 !important;
+        display: flex !important;
+    }
+    .R{
+        font-size: 1rem;
+    }
+    .logo{
+        margin-left: 0px !important;
+        font-size: .75rem;
+    }
+}
+.logout{
+    width: fit-content !important;
+    height: fit-content !important;
+}
