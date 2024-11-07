@@ -1,0 +1,25 @@
+.appointment{
+    font-family: 'Times New Roman', Times, serif !important;
+    height: 100vh;
+    margin-bottom: 20px;
+    width: 100%;
+    button{
+        width: fit-content !important;
+        height: fit-content !important;
+    }
+    button:hover{
+        color: black !important;
+    }
+
+}
+@media(max-width:800px){
+  .appointment{
+    button{
+        width: fit-content !important;
+        font-size: 0.5rem !important;
+    }
+  }  
+}
+@media(max-width:500px){
+    
+}

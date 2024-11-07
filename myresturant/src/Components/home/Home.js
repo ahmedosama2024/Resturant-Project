@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import './home.css'
 import { Link } from 'react-router-dom';
+import Offer from '../offer/Offer';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <h2>Open From 10 AM to 1 AM</h2>
         </div>
         </header>
+        <Offer/>
     </>
   )
 }

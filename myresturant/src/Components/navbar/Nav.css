@@ -18,6 +18,10 @@
     font-size: 2rem !important;
     margin-left:20% !important;
 }
+.appoint{
+    font-size: 2rem !important;
+    margin-left:5% !important;
+}
 .nav-link:hover{
     color: rgba(218, 186, 4, 0.699) !important;
 }
@@ -29,6 +33,13 @@
         margin-left:5% !important;
         font-size: 1.5rem !important;
     }
+    .appoint{
+        margin-left:0% !important;
+        font-size: 1rem !important;
+    }
+    .welcome-message{
+        font-size: 1rem;
+    }
 
 }
 @media(max-width:500px){
@@ -39,6 +50,14 @@
         font-size: 0.65rem !important;
         margin-left:0 !important;
         display: flex !important;
+    }
+    .appoint{
+        font-size: 0.65rem !important;
+        margin-left:0 !important;
+        display: flex !important;
+    }
+    .welcome-message{
+        font-size: 0.7rem;
     }
     .R{
         font-size: 1rem;

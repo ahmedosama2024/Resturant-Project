@@ -11,6 +11,7 @@ class Appointment extends Model
         'name',
         'date',
         'state',
+        'user_id'
     ];
     public function user(){
         return $this->belongsTo(User::class);

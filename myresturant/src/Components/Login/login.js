@@ -38,6 +38,8 @@ const Login = () => {
         if(!response.data.error){
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('name', response.data.user.name);
+        localStorage.setItem('role', response.data.user.role);
+        localStorage.setItem('id', response.data.user.id);
         nav("/")
         
         

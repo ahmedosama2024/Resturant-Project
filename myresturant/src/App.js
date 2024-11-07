@@ -6,7 +6,8 @@ import Register from "./Components/Resigster/Register";
 import Book from "./Components/Book/Book";
 import Login from "./Components/Login/login";
 import Footer from "./Components/Footer/Footer";
-import Offer from "./Components/offer/Offer";
+import Appointments from "./Components/Appointments/Appointments";
+import Myappoint from "./Components/Myappointment/Myappoint";
 
 
 
@@ -21,10 +22,11 @@ const App = function () {
     <Route path="/" element={<Home/>} />
     <Route path="/menu" element={<Menu/>} />
      {!localStorage.getItem('name')&&<Route path="/register" element={<Register/>} />} 
+     {localStorage.getItem('role') == 'admin' && <Route path="/appointments" element={<Appointments />} />} 
     <Route path="/book" element={<Book/>} />
+    {localStorage.getItem('id')&&<Route path="/myappointments" element={<Myappoint/>} />}
     <Route path="/login" element={<Login/>} />
     </Routes>
-    <Offer/>
     <Footer/>
     </BrowserRouter>
     </>

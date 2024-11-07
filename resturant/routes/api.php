@@ -15,5 +15,6 @@ Route::post('/register',[UserController::class,'store']);
 Route::post('/login',[UserController::class,'login']);
 Route::post('/logout',[UserController::class,'logout'])->middleware('auth:sanctum');
 Route::get('/appointments/{id}',[ApiController::class,'show']);
+Route::put('/appointments/{id}',[ApiController::class,'update']);
 Route::delete('/appointments/{id}',[ApiController::class,'destroy']);
 

@@ -30,7 +30,8 @@ class ApiController extends Controller
     {
         $validate=Validator::make($request->all(),[
             "name"=>"required",
-            "date"=>"required"
+            "date"=>"required",
+            "user_id"=>"required",
         ]);
         if(!$validate){
             return response()->json($validate->errors());
@@ -39,6 +40,7 @@ class ApiController extends Controller
             "name"=>$request->name,
             "date"=>$request->date,
             "state"=>$request->state? $request->state:"Pendding",
+            "user_id"=>$request->user_id
         ]);
         
         $appointment=[
@@ -46,13 +48,24 @@ class ApiController extends Controller
         ];
         return response()->json($appointment);
     }
+    /**
+     * Update State
+     */
+    public function update(Request $request,$id){
+        $data=Appointment::findOrFail($id);
+
+        $data->state= $request->state;
+
+        $data->save();
+        return response()->json($data);
+    }
 
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
-        $data=Appointment::findOrFail($id);
+        $data=Appointment::where('user_id',$id)->get();
         return response()->json($data);
     }
 
